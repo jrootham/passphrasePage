@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script src="js/react.js"></script>
+    <script src="js/PuffNet.js"></script>
+    <script src="js/promise.min.js"></script>
+    <script src="js/passphrasePage.js"></script>
+    <script src="js/externalDice.js"></script>
+    <script src="js/import.js"></script>
+    <title>Create Passphrase</title>
+</head>
+<body>
+    <div id="outer">
+        <h1>Create Passphrase</h1>
+        <div class="inner">
+            <h2>Automatically Create Passphrase</h2>
+            <div id="autophrase"><span id="autoholder"> phrase</span></div>
+            <div id="autobuttons">
+                <button onclick="createPhrase">Create Passphrase</button>
+                <button id="autocopy" onclick="copyPhrase">Copy Passphrase to Clipboard</button>
+            </div>
+        </div>
+        <div class="inner">
+            <h2>Use Dice to Create Passphrase</h2>
+            <div id="dicediv">Foo</div>
+        </div>
+
+        <script src="build/autophrase.js"></script>
+
+        <div class="inner">
+            <h2>Use Dice with External Script to Create Passphrase</h2>
+            <div>
+                <a href="data/external.zip">Get External Script</a>
+            </div>
+            <div>
+                Paste obscured phrase here <input type="text"\>
+                <button>Accept phrase</button>
+            </div>
+        </div>
+
+        <script src="build/dice.js"></script>
+
+        <div class="inner">
+            <h2>Import Keys</h2>
+            <div>
+                <div>
+                    Public key : <input type="text" \>
+                </div>
+                <div>
+                    Private key : <input type="text" \>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
